@@ -1,0 +1,176 @@
+body{
+    box-sizing: border-box;
+}
+
+/* css navigasi */
+
+nav{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+
+}
+
+.nav-wrapper img {
+    max-height: 55px;
+    padding: 5px;
+}
+
+.nav-wrapper .pages{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    
+}
+
+/* css match */
+
+#body-content{
+    margin-top: 150px;
+    max-width: 75%;
+}
+
+#body-content .card-match{
+    padding: 5px;
+    max-height: 225.25px;
+}
+
+#body-content .card-match img{
+    width: 50px;
+    display: block;
+    margin: 20px 0 0 10px;
+}
+
+#body-content .card-match span{
+    font-weight: bold;
+}
+
+#body-content .card-match .kick-off{
+    margin-top: 15px;
+}
+
+#body-content .match{
+    position: relative;
+}
+
+#body-content .match .btn-favorit, .btn-delete{
+    position: absolute;
+    top: 5vh;
+}
+
+
+/* css klasemen */
+
+#body-content table .poin{
+    max-width: 15px;
+    text-align: center;
+}
+
+#body-content table td .alpha{
+    position: relative;
+    bottom: 7px;
+}
+
+#body-content table td img{
+    display: inline;
+    max-width: 25px;
+}
+
+#body-content table li{
+    display: inline;
+    margin-right: 5px;
+}
+
+#body-content .season{
+    padding: 15px 30px;
+}
+#body-content .season h5{
+    margin-top: -2px;
+    font-size: 21px;
+}
+
+
+
+/* css detail */
+nav .detail {
+    margin-left: 50px;
+}
+
+#body-content .card-detail{
+    margin-top: -100px;
+}
+
+#body-content a{
+    color: black;
+}
+
+#body-content .card-detail .heading{
+    padding: 30px;
+    font-weight: bold;
+}
+
+#body-content .card-detail h6{
+    font-weight: bold;
+}
+
+#body-content .card-detail .result img{
+    margin-top: -10px;
+}
+
+#body-content .card-detail .result img,h4{
+    display: inline;
+}
+
+
+#body-content .card-detail .result  h4{
+    margin: auto  0;
+    font-weight: bold;
+}
+#body-content .card-detail .result  img{
+    width: 60px;
+}
+
+#body-content .card-detail .sub-title h6{
+    text-align: center;
+    margin: 8px 40px 8px 0 !important;
+    padding: 8px;
+    font-weight: bold;
+}
+
+#body-content .card-detail .sub-title-stat table td{
+    text-align: center;
+    max-width: 100px;
+}
+#body-content .not-found{
+    color: #304ffe ;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+
+/* media query */
+@media only screen and (max-width: 993px) {
+    #body-content {
+        max-width: 80%;
+    }
+    #body-content .match .btn-favorit, .btn-delete{
+        right: 12vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #body-content .card-match{
+        padding: 15px;
+        max-height: 250px;
+    }
+    #body-content {
+        max-width: 90%;
+    }
+  }
+
+  @media only screen and (min-width: 993px) {
+    #body-content .match .btn-favorit, .btn-delete{
+        right: 4vw;
+    }
+  }
